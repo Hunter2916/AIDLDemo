@@ -28,12 +28,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //            intent = new Intent(this, Class.forName("com.hunter.aidldemo.AidlService"));
         intent = new Intent();
         intent.setPackage("com.hunter.aidldemo");
         intent.setAction("com.hunter.aidldemo.AidlService");
-//        ComponentName componentName = new ComponentName("com.hunter.aidldemo", "com.hunter.aidldemo.AidlService");
-//        intent.setComponent(componentName);
         initView();
 
     }
